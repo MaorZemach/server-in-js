@@ -22,7 +22,7 @@ function stack_calculate(stack,operation){
         else{*/
           a=stack.pop();
           b=stack.pop();
-          res=operation.plus(a,b)
+          res=operations.plus(a,b);
         //}
         break;
     
@@ -35,7 +35,7 @@ function stack_calculate(stack,operation){
         else{*/
         a=stack.pop();
         b=stack.pop();
-        res=operation.minus(a,b);
+        res=operations.minus(a,b);
       //}
       break;
   
@@ -48,7 +48,7 @@ function stack_calculate(stack,operation){
         //else{
           a=stack.pop();
           b=stack.pop();
-          res=operation.times(a,b);
+          res=operations.times(a,b);
         //}
           break;
   
@@ -61,7 +61,7 @@ function stack_calculate(stack,operation){
           //else{
             a=stack.pop();
             b=stack.pop();
-            res=operation.divide(a,b);
+            res=operations.divide(a,b);
           //}
           break;
           
@@ -74,7 +74,7 @@ function stack_calculate(stack,operation){
           //else{
             a=stack.pop();
             b=stack.pop();
-            res=operation.pow(a,b);
+            res=operations.pow(a,b);
           //}
             break;
   
@@ -86,7 +86,7 @@ function stack_calculate(stack,operation){
         //}
         //else{
           a=stack.pop();
-          res=operation.abs(a);
+          res=operations.abs(a);
         //}
             break;
             
@@ -98,7 +98,7 @@ function stack_calculate(stack,operation){
         //}
         //else{
           a=stack.pop();
-          res=operation.fact(a);
+          res=operations.fact(a);
         //}
             break;
             
